@@ -38,9 +38,10 @@ body {
     color: hsl(179, 62%, 43%);
 }
 
-.container .description h3 {
+.container .description h2 {
     margin: 20px 0 10px 0;
     color: hsl(71, 73%, 54%);
+    font-size: 1.25rem;
 }
 
 .container .description p {

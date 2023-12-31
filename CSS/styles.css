@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+}
+
+body { 
+    background: hsl(204, 43%, 93%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 590px;
+    display: grid;
+    grid-template: repeat(2, auto) / repeat(2, auto);
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 25px hsl(218, 22%, 69%);
+}
+
+.container .description,
+ .container .price,
+ .container .why-us { 
+    padding: 2rem;
+}
+
+.container .description {
+    grid-column: span 2;
+}
+
+.container .description h1 { 
+    color: hsl(179, 62%, 43%);
+}
+
+.container .description h3 {
+    margin: 20px 0 10px 0;
+    color: hsl(71, 73%, 54%);
+}
+
+.container .description p {
+    color: hsl(218, 22%, 67%);
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.container .price { 
+    background: hsl(179, 38%, 53%);
+    border-bottom-left-radius: 10px;
+}
+
+.container .price p { 
+    line-height: 1.6;
+    margin: 10px 0;
+    color: hsl(218, 22%, 67%);
+}
+
+.container .price p strong {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.container .why-us {
+    background: hsl(179, 43%, 56%);
+    border-bottom-right-radius: 10px;
+}
+
+.container .heading { 
+    color: #fff;
+    font-weight: 400;
+}
+
+.container .price .sign-up-btn {
+    width: 100%;
+    padding: 12px 0;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background: hsl(71, 73%, 54%);
+    box-shadow: 0px 0px 25px hsl(218, 22%, 69%);
+    color: #fff;
+}
+
+.container .why-us p { 
+    font-weight: 400;
+    color: hsl(218, 22%, 67%);
+    max-width: 25ch;
+}
+
+.container .why-us .heading { 
+    margin-bottom: 10px;
+}
+
+@media (max-width: 700px) {
+    .container {
+        grid-template: auto / auto;
+        width: 375px;
+    }
+
+    .container .description {
+        grid-column: 1/2;
+    }
+
+    .container .price,
+    .container .why-us,
+    .container {
+        border-radius: 0px;
+    }
+}
